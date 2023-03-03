@@ -14,17 +14,29 @@
     text-align: center;
     background: #1abc9c;
     color: white;
+    height: 100vh;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
   }
   
   /* Increase the font size of the heading */
   .header h1 {
-    font-size: 40px;
+    font-size: 60px;
+    text-align: center;
+    padding-top: 30vh;
+    text-shadow: 0 0 10px #182a28;
+    }
+
+  .header p {
+    font-size: 25px;
+    font-family: serif;
+    text-shadow: 0 0 7px #182a28;
   }
   
   /* Style the top navigation bar */
   .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: #2d5854;
     position: fixed; /* Set the navbar to fixed position */
     width: 100%;
   }
@@ -83,13 +95,25 @@
     padding: 20px;
   }
   
+  .side img {
+    width: 20vw;
+  }
   /* Fake image, just for this example */
-  .fakeimg {
+  /* .imgageofme {
     background-color: #aaa;
     width: 100%;
     padding: 20px;
-  }
+  } */
   
+/* --------------------------------------------------------------------------------------------------------- */
+/* slideshow waterboiler */
+
+
+
+  /* .multiboil {
+    width: 30vw;
+  } */
+
   /* Footer */
   .footer {
     padding: 20px;
