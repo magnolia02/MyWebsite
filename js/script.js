@@ -1,3 +1,4 @@
+// slideshows
 var slideIndex1 = 1;
 showDivs1(slideIndex1);
 
@@ -33,3 +34,11 @@ function showDivs2(n) {
   }
   x[slideIndex2-1].style.display = "block";
 }
+
+// clickable titles and info appears
+// const title = document.getElementsByClassName('product');
+// const info = document.getElementsByClassName('slide-out-panel');
+
+// title.addEventListener('click', function() {
+//   info.classList.toggle('show');
+// });
