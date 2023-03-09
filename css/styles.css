@@ -44,28 +44,26 @@
     background-color: #2d5854;
     position: fixed; /* Set the navbar to fixed position */
     width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
   
   /* Style the navigation bar links */
   .navbar a {
-    float: right;
     display: block;
     color: white;
-    text-align: center;
     padding: 14px 20px;
     text-decoration: none;
-
-  }
-  
-  /* Right-aligned link */
-  .navbar a.right {
-    float: right;
   }
   
   /* Change color on hover */
   .navbar a:hover {
     background-color: #ddd;
     color: black;
+    border-radius: 10px;
+    text-shadow: 0 0 10px #182a28;
   }
   
   /* Change color on active */
@@ -79,14 +77,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20vh;
+    height: 15vh;
     color: white;
     text-shadow: 0 0 10px #182a28;
   }
   
   /* images */
   img {
-    border-radius: 10%;
+    border-radius: 30px;
   }
   /* About me */
   .aboutme {
