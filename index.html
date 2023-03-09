@@ -6,16 +6,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
-
 </head>
 
 <body>
 
     <div class="navbar">
-        <a href="#">Link1</a>
-        <a href="#">Link2</a>
-        <a href="#">Link3</a>
-        <a href="#">Link4</a>
+        <a href="#resume">Resume</a>
+        <a href="#projects">Projects</a>
+        <a href="#aboutme">About me</a>
     </div>
 
     <div class="header">
@@ -23,72 +21,162 @@
         <p>My portfolio</p>
     </div>
 
-
-
-    <div class="row">
-        <div class="side">
-            <h2>About Me</h2>
-            <h5>Photo of me:</h5>
-            <!-- <div class="imageofme" style="height:200px;"></div> -->
-            <img src="images/me.jpg" alt="Lisa Leliaert">
-             <p>I'm Lisa Leliaert, born in Gent, Belgium. I'm 20 years old. Right now I'm in my second year of university, I study industrial design.</p>
-            <h3>More Text</h3>
-            <p>Lorem ipsum dolor sit ame.</p>
-            <div class="fakeimg" style="height:60px;">Image</div><br>
-            <div class="fakeimg" style="height:60px;">Image</div><br>
-            <div class="fakeimg" style="height:60px;">Image</div>
+    <div class="content">
+        <div class="aboutme">
+            <div class="product">
+                <h1 id="aboutme">About Me</h1>
+            </div>
+            <div class="slide-out-panel">
+                <div class="contentaboutme">
+                    <img src="images/me.jpg" alt="Lisa Leliaert">
+                    <div class="textbio">
+                        <p>I'm Lisa Leliaert, born in Gent, Belgium. I'm 20 years old. Right now I'm in my second year of university, I study industrial design.</p>
+                        <h3>Interests and hobbies</h3>
+                        <ul>
+                            <li>Drawing</li>
+                            <li>Arst and crafts</li>
+                            <li>Music</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="main">
-            <h1>Design projects</h1>
-            <h2>Multiboil</h2>
-            <h5>A multifunctional kettle, 2022</h5>
 
-            <!-- <img class="multiboil" src="images/in_context.png" alt="Multiboil">
-            <img class="multiboil" src="images/inside_waterboiler.jpg" alt="Inside waterboiler">
-            <img class="multiboil" src="images/waterboiler_prototype.jpg" alt="Prototype">
-            <img class="multiboil" src="images/waterboiler_front.jpg" alt="Display">
-            <img class="multiboil" src="images/waterboiler_infini.png" alt="Infini"> -->
+        <p class="whitespace"> </p> <!-- white space -->
 
-            <!-- <div class="slideshow-container">
-                <div class="mySlides fade">
-                    <div class="numbertext">1 / 5</div>
-                    <img class="multiboil" src="images/in_context.png" style="width:100%" alt="Multiboil">
-                    <div class="text">Caption Text</div>
+        <div class="projects">
+            <div class="product">
+                <h1 id="projects">Design projects</h1>
+            </div>
+            <div class="slide-out-panel">
+                <div class="contentprojects">
+                    <div class="oneproject">
+                        <div class="multiboil">
+                            <h2>Multiboil</h2>
+                            <h5>A multifunctional kettle, 2022</h5>
+
+                            <!-- Slideshow container -->
+                            <div class="slideshow-container">
+                                <div class="mySlides1">
+                                    <img src="images/in_context.png" alt="Multiboil">
+                                </div>
+                                <div class="mySlides1">
+                                    <img src="images/inside_waterboiler.jpg" alt="Inside waterboiler">
+                                </div>
+                                <div class="mySlides1">
+                                    <img src="images/waterboiler_prototype.jpg" alt="Prototype">
+                                </div>
+                                <div class="mySlides1">
+                                    <img src="images/waterboiler_front.jpg" alt="Display">
+                                </div>
+                                <div class="mySlides1">
+                                    <img src="images/waterboiler_infini.png" alt="Infini">
+                                </div>
+                                <div class="mySlides1">
+                                    <img src="images/Leliaert_Lisa_3_1_8.jpg" alt="Infini">
+                                </div>
+                                <div class="mySlides1">
+                                    <img src="images/Leliaert_Lisa_4_6_16.jpg" alt="Infini">
+                                </div>
+                                <div class="buttons">
+                                    <button class="buttonleft" onclick="plusDivs1(-1)">&#10094;</button>
+                                    <button class="buttonright" onclick="plusDivs1(+1)">&#10095;</button>
+                                </div>
+                            </div>
+
+                            <p>This kettle has a multifunctional design. It can cook pasta, cook noodles, heat up drinks, heat up soup, ...
+                            The design is also made so that it can be taken apart and the inner part can be washed in the dishwasher.</p>
+                        </div>
+                    </div>
+
+                    <div class="oneproject">
+                        <div class="cornellbox">
+                            <h2>Cornell box</h2>
+                            <h5>A cornell box made in VRED, 2022</h5>
+                            <img src="images/cornellbox.jpg" alt="Cornell box">
+                            <p>This is a cornell box created in the software program VRED.
+                                I experimented with textures, light, reflextion, patterns, ...
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="oneproject">
+                        <div class="graphicdesign">
+                            <h2>Design process documentation</h2>
+                            <h5>A small book detailing the design process, 2022</h5>
+                            
+                            <!-- Slideshow container -->
+                            <div class="slideshow-container">
+                                <div class="mySlides2">
+                                    <img src="images/mockup_cover.png" alt="Mockup cover">
+                                </div>
+                                <div class="mySlides2">
+                                    <img src="images/mockup_inside.png" alt="Mockup inside">
+                                </div>
+
+                                <div class="buttons">
+                                    <button class="buttonleft" onclick="plusDivs2(-1)">&#10094;</button>
+                                    <button class="buttonright" onclick="plusDivs2(+1)">&#10095;</button>
+                                </div>
+                            </div>
+
+                            <a class="download_document" href="documents/drukklare_pdf.pdf">Download pdf</a>
+                        </div>
+                    </div>
+
+                    <div class="oneproject">
+                        <div class="ridley">
+                            <h2>Ridley layout</h2>
+                            <h5>Layout of a Ridley folder, 2022</h5>
+                            <img src="images/ridley.png" alt="Ridley">
+                            <a class="download_document" href="documents/Oefening_Publisher_Ridley.pdf">Download pdf</a>
+                        </div>
+                    </div>
+
+                    <div class="oneproject">
+                        <div class="mailbox">
+                            <h2>Mailbox</h2>
+                            <h5>A mailbox created in Siemens NX, 2022</h5>
+                            <img src="images/brievenbus.png" alt="Mailbox">
+                            <a class="download_document" href="documents/Leliaert_Lisa_assembly.prt">Download NX file</a>
+                            <p>I created this mailbox in Siemens NX. It is not my design.</p>
+                        </div>
+                    </div>
+
+                    <div class="oneproject">
+                        <div class="bus">
+                            <h2>Adjustable bus</h2>
+                            <h5>An adjustable bus made in Siemens NX, 2022</h5>
+                            <img src="images/bus1.png" alt="bus">
+                            <a class="download_document" href="documents/00_assembly_bus.prt">Download NX file</a>
+                            <p>In Siemens NX you can insert how many people need to be on the bus.
+                                The size of the bus will vary according to the amount of people.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="mySlides fade">
-                    <div class="numbertext">2 / 5</div>
-                    <img class="multiboil" src="images/inside_waterboiler.jpg" style="width:100%" alt="Inside waterboiler">
-                    <div class="text">Caption Two</div>
-                </div>
-                
-                <div class="mySlides fade">
-                    <div class="numbertext">3 / 5</div>
-                    <img class="multiboil" src="images/waterboiler_prototype.jpg" style="width:100%" alt="Prototype">
-                    <div class="text">Caption Three</div>
-                </div>
+            </div>
+        </div>
 
-                <div class="mySlides fade">
-                    <div class="numbertext">4 / 5</div>
-                    <img class="multiboil" src="images/waterboiler_front.jpg" style="width:100%" alt="Display">
-                    <div class="text">Caption Three</div>
-                </div>
-
-                <div class="mySlides fade">
-                    <div class="numbertext">5 / 5</div>
-                    <img class="multiboil" src="images/waterboiler_infini.png" style="width:100%" alt="Infini">
-                    <div class="text">Caption Three</div>
-                </div> -->
-            <!-- </div> -->
-            
-
+        <p class="whitespace"> </p> <!-- white space -->
+    
+        <div class="resume">
+            <h1 id="resume">Resume</h1>
+            <a class="resumepdf" href="documents/resume_Lisa_Leliaert.pdf">Click to download resume</a>
         </div>
     </div>
 
     <div class="footer">
-        <h2>Footer</h2>
+        <h2>Contact</h2>
+        <h5>Email</h5>
+        <p>lisa.leliaert02@gmail.com</p>
+        <h5>Phone number</h5>
+        <p>+032475845763</p>
+        <h5>Adress</h5>
+        <p>Ghent, Belgium</p>
     </div>
 
+<script src="js/script.js"></script>
 </body>
 
 </html>

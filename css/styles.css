@@ -1,6 +1,10 @@
 * {
     box-sizing: border-box;
   }
+
+  p {
+    line-height: 1.2;
+  }
   
   /* Style the body */
   body {
@@ -8,18 +12,19 @@
     margin: 0;
   }
   
-  /* Header/logo Title */
+  /* Front page */
   .header {
     padding: 80px;
     text-align: center;
-    background: #1abc9c;
     color: white;
     height: 100vh;
     background-image: url("../images/background.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
   
-  /* Increase the font size of the heading */
+  /* Text on front page */
   .header h1 {
     font-size: 60px;
     text-align: center;
@@ -35,7 +40,7 @@
   
   /* Style the top navigation bar */
   .navbar {
-    overflow: hidden;
+    overflow: hidden; /* prevents scrollbars from showing up */
     background-color: #2d5854;
     position: fixed; /* Set the navbar to fixed position */
     width: 100%;
@@ -69,50 +74,131 @@
     color: black;
   }
   
-
-  /* Column container */
-  .row {  
-    display: -ms-flexbox; /* IE10 */
+  /* titles */
+  .content h1 {
     display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    color: white;
+    text-shadow: 0 0 10px #182a28;
   }
   
-  /* Create two unequal columns that sits next to each other */
-  /* Sidebar/left column */
-  .side {
-    -ms-flex: 30%; /* IE10 */
-    flex: 30%;
-    background-color: #f1f1f1;
+  /* images */
+  img {
+    border-radius: 10%;
+  }
+  /* About me */
+  .aboutme {
+    background-color: #a5c3bf;
     padding: 20px;
-  }
-  
-  /* Main column */
-  .main {   
-    -ms-flex: 70%; /* IE10 */
-    flex: 70%;
-    background-color: white;
-    padding: 20px;
-  }
-  
-  .side img {
-    width: 20vw;
-  }
-  /* Fake image, just for this example */
-  /* .imgageofme {
-    background-color: #aaa;
     width: 100%;
-    padding: 20px;
-  } */
-  
-/* --------------------------------------------------------------------------------------------------------- */
-/* slideshow waterboiler */
+  }
 
+  .contentaboutme {
+    display: flex;
+    flex-direction: row;
+  }
 
-
-  /* .multiboil {
+  .contentaboutme img {
     width: 30vw;
+    margin: 20px;
+  }
+
+  .textbio {
+    padding: 20px 10% 20px 20px;
+  }
+
+  .textbio ul {
+    list-style-type: none;
+  }
+
+  .textbio li {
+    padding-bottom: 8px;
+  }
+
+  .whitespace {
+    height: 30vh;
+    margin: 0;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  /* slide out panel */
+  /* .slide-out-panel {
+    display: none;
   } */
+
+  /* Projects */
+  .projects {
+    background-color: #a5c3bf;
+    padding: 20px;
+  }
+
+  .projects img {
+    width: 35vw;
+  }
+
+  .contentprojects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  /* the width of a project */
+  .oneproject {
+    width: 35vw;
+  }
+
+  .download_document {
+    text-decoration: none;
+    color: lightgrey;
+    text-shadow: 0 0 10px #182a28;
+    display: flex;
+    margin: 10px;
+  }
+
+  /* slideshow */
+  /* buttons */
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .buttonleft, .buttonright {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    color: white;
+    text-shadow: 0 0 10px #182a28;
+    border: 1px solid white;
+    border-radius: 50%;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .slideshow-container img {
+    margin-bottom: 10px;
+  }
+
+  /* resume */
+  .resume {
+    background-color: #a5c3bf;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .resumepdf {
+    text-decoration: none;
+    color: lightgrey;
+    text-shadow: 0 0 10px #182a28;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+  }
 
   /* Footer */
   .footer {
