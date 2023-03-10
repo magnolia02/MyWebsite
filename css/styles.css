@@ -72,7 +72,21 @@
     color: black;
   }
   
+  /* clickable titles */
+  .product {
+    cursor: pointer;
+  }
+
   /* titles */
+  .product {
+    background-color: #a5c3bf;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .content h1 {
     display: flex;
     justify-content: center;
@@ -80,19 +94,29 @@
     height: 15vh;
     color: white;
     text-shadow: 0 0 10px #182a28;
+    padding: 30px;
+  }
+
+  /* hover titles */
+  .content h1:hover {
+    background-color: #ddd;
+    color: black;
+    border-radius: 10px;
+    text-shadow: 0 0 10px #182a28;
+  }
+
+  /* slide-out-panel */
+  .slide-out-panel {
+    display: none;
+    background-color: #bbd5d1;
   }
   
   /* images */
   img {
     border-radius: 30px;
   }
-  /* About me */
-  .aboutme {
-    background-color: #a5c3bf;
-    padding: 20px;
-    width: 100%;
-  }
 
+  /* about me */
   .contentaboutme {
     display: flex;
     flex-direction: row;
@@ -123,17 +147,12 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
-  
-  /* slide out panel */
-  /* .slide-out-panel {
-    display: none;
-  } */
 
   /* Projects */
-  .projects {
+  /* .projects {
     background-color: #a5c3bf;
     padding: 20px;
-  }
+  } */
 
   .projects img {
     width: 35vw;
@@ -182,12 +201,6 @@
   }
 
   /* resume */
-  .resume {
-    background-color: #a5c3bf;
-    padding: 20px;
-    width: 100%;
-  }
-
   .resumepdf {
     text-decoration: none;
     color: lightgrey;
@@ -195,7 +208,7 @@
     font-size: large;
     display: flex;
     justify-content: center;
-    margin: 10px;
+    padding: 30px;
   }
 
   /* Footer */
@@ -204,19 +217,6 @@
     text-align: center;
     background: #ddd;
   }
-
-  /* clickable titles */
-  /* .product {
-    cursor: pointer;
-  }
-
-  .slide-out-panel {
-    display: none;
-  }
-
-  .show {
-    display: block;
-  } */
   
   /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 700px) {
