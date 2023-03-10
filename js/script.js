@@ -35,10 +35,17 @@ function showDivs2(n) {
   x[slideIndex2-1].style.display = "block";
 }
 
-// clickable titles and info appears
-// const title = document.getElementsByClassName('product');
-// const info = document.getElementsByClassName('slide-out-panel');
+// clickable title that shows info
+var titles = document.getElementsByClassName("product");
+		for (var i = 0; i < titles.length; i++) {
+			titles[i].addEventListener("click", showInfo);
+		}
 
-// title.addEventListener('click', function() {
-//   info.classList.toggle('show');
-// });
+		function showInfo() {
+			var infoDiv = this.nextElementSibling;
+			if (infoDiv.style.display === "block") {
+				infoDiv.style.display = "none";
+			} else {
+				infoDiv.style.display = "block";
+			}
+		}
