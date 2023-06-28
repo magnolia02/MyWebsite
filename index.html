@@ -5,12 +5,12 @@
     <title>MyPortfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css"> <!-- Koppeling naar externe CSS-stijlblad -->
 </head>
 
 <body>
 
-    <div class="navbar">
+    <div class="navbar"> <!-- Navigatiebalk -->
         <a href="#LisaL">Home</a>
         <a href="#aboutme">About me</a>
         <a href="#projects">Design Projects</a>
@@ -18,7 +18,7 @@
         <a href="#game">Robot Game</a>
     </div>
 
-    <div class="header">
+    <div class="header"> 
         <h1 id="LisaL">Lisa Leliaert</h1>
         <p>My portfolio</p>
     </div>
@@ -57,7 +57,7 @@
                             <h2>Multiboil</h2>
                             <h5>A multifunctional kettle, 2022</h5>
 
-                            <!-- Slideshow container -->
+                            <!-- Slideshow container voor afbeeldingen van het project-->
                             <div class="slideshow-container">
                                 <div class="mySlides1">
                                     <img src="images/in_context.png" alt="Multiboil">
@@ -81,8 +81,8 @@
                                     <img src="images/Leliaert_Lisa_4_6_16.jpg" alt="Infini">
                                 </div>
                                 <div class="buttons">
-                                    <button class="buttonleft" onclick="plusDivs1(-1)">&#10094;</button>
-                                    <button class="buttonright" onclick="plusDivs1(+1)">&#10095;</button>
+                                    <button class="buttonleft" onclick="plusDivs1(-1)">&#10094;</button><!-- Vorige afbeelding in de slideshow -->
+                                    <button class="buttonright" onclick="plusDivs1(+1)">&#10095;</button><!-- Volgende afbeelding in de slideshow -->
                                 </div>
                             </div>
 
@@ -167,7 +167,7 @@
                 <h1 id="resume">Resume</h1>
             </div>
             <div class="slide-out-panel">
-                <a class="resumepdf" href="documents/resume_Lisa_Leliaert.pdf">Click to download resume</a>
+                <a class="resumepdf" href="documents/resume_Lisa_Leliaert.pdf">Click to download resume</a> <!-- Link naar het downloaden van het cv -->
             </div>
         </div>
 
@@ -178,7 +178,7 @@
                 <h1 id="game">Robot Game</h1>
             </div>
             <div class="slide-out-panel">
-                <iframe src="https://editor.p5js.org/magnolia02/full/q_siGoSem" width="820" height="650"></iframe>
+                <iframe src="https://editor.p5js.org/magnolia02/full/q_siGoSem" width="820" height="650"></iframe><!-- Insluiten van een robotgame via een iframe -->
             </div>
         </div>
     </div>
@@ -197,7 +197,8 @@
         <p>Ghent, Belgium</p>
     </div>
 
-<script src="js/script.js"></script>
+<script src="js/script.js"></script><!-- Koppeling naar externe JavaScript-bestand -->
+</body>
 </body>
 
 </html>
