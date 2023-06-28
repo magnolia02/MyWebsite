@@ -12,7 +12,7 @@ function showDivs1(n) { // om een specifieke slide van slideshow 1 weer te geven
   var x = document.getElementsByClassName("mySlides1"); // Haal alle elementen op met de class "mySlides1"
   if (n > x.length) {slideIndex1 = 1} // Als n groter is dan het aantal elementen, reset slideIndex1 naar 1
   if (n < 1) {slideIndex1 = x.length} ; // Als n kleiner is dan 1, stel slideIndex1 in op het aantal elementen
-  for (i = 0; i < x.length; i++) { // voert een for-lus uit om elk element in de x array te doorlopen
+  for (i = 0; i < x.length; i++) {
     x[i].style.display = "none"; // Verberg alle slides
   }
   x[slideIndex1-1].style.display = "block"; // Toon de geselecteerde slide
